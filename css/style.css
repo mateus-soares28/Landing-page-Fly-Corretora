@@ -1,0 +1,1171 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ==========================================================================
+   Header & Navbar
+   ========================================================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: radial-gradient(circle at top, #0d297a 0%, #06103c 100%);
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    width: 10%;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav-link i {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.btn-outline-nav {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 99px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-nav:hover {
+    background-color: #ffffff;
+    color: #06103c;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero {
+    position: relative;
+    min-height: calc(100vh - 90px);
+    background: radial-gradient(circle at 70% 40%, #153bb3 0%, #06103c 70%);
+    display: flex;
+    align-items: center;
+    padding: 40px 8% 0 8%;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1.2;
+    z-index: 2;
+    padding-bottom: 60px;
+}
+
+/* Elementos do Conteúdo */
+.badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.hero-title strong {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 35px;
+}
+
+/* Grid de Diferenciais */
+.features-grid {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-icon {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-text strong {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.feature-text span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Botões de Ação */
+.cta-group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #06103c;
+    padding: 16px 32px;
+    border-radius: 99px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.1);
+    background-color: #f0f0f0;
+}
+
+.btn-text {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.btn-text:hover {
+    opacity: 0.8;
+}
+
+.btn-text i {
+    font-size: 10px;
+}
+
+/* Seção de Parceiros/Logos */
+.partners-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.partners-section p {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.partners-logos {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.partner-logo {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+/* Área da Imagem (Direita) */
+.hero-image-container {
+    flex: 0.9;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 90%;
+}
+
+.hero-person-img {
+    max-width: 105%;
+    height: auto;
+    z-index: 2;
+    display: block;
+    transform: translateY(25px); /* Ajuste sutil para encostar na base */
+}
+
+/* Asa Estilizada de Fundo */
+.wing-bg {
+    position: absolute;
+    width: 550px;
+    height: 300px;
+    background: url('../img/assas-fly-corretora\ 2.svg') no-repeat center center;
+    background-size: contain;
+    top: 7%;
+    left: 18%;
+    opacity: 40%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   Seção: Seguro Auto
+   ========================================================================== */
+.seguro-auto-section {
+    position: relative;
+    padding: 80px 8% 60px 8%;
+   
+    background-image: url('../img/background-secao-2-seguroauto.png'); 
+    background-size: cover;
+    background-position: center right; 
+    background-repeat: no-repeat;
+    /* Fundo escuro como fallback enquanto a imagem carrega */
+    background-color: rgb(13, 41, 122); 
+    overflow: hidden;
+}
+
+
+.seguro-auto-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(13, 41, 122) 0%, rgba(4, 9, 36, 0) 100%);
+    z-index: 1;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique acima do gradiente/imagem */
+}
+
+/* Layout Principal (Hero do Auto) */
+.auto-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.auto-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.section-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    color: #6a95ff; /* Azul mais claro para destaque */
+}
+
+.section-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+/* Lista de Benefícios */
+.benefits-list {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 12px;
+}
+
+.benefits-list li i {
+    color: #6a95ff;
+    font-size: 18px;
+}
+
+/* CTAs Auto */
+.cta-group-auto {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-large {
+    padding: 18px 36px;
+    font-size: 15px;
+}
+
+/* ---------------------------------------------------
+   Área Visual (Apenas as Badges flutuantes agora)
+   --------------------------------------------------- */
+.auto-visual {
+    flex: 1.2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Mantém a altura da div à direita para as badges */
+}
+
+/* Badges Flutuantes (Glassmorphism) */
+.floating-badge {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+.floating-badge i {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.badge-text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Posicionamento Específico dos Badges */
+.badge-top-left {
+    top: 10%;
+    left: 15%; /* Ajuste fino de eixo para não bater no texto */
+}
+
+.badge-top-right {
+    top: 15%;
+    right: 5%;
+}
+
+.badge-bottom-right {
+    bottom: 15%;
+    right: 0%;
+}
+
+/* ---------------------------------------------------
+   Grid de Funcionalidades (Cards Inferiores)
+   --------------------------------------------------- */
+.auto-features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.auto-feature-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(5px); /* Adicionado um leve blur para não competir com o fundo */
+    padding: 24px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.auto-feature-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.icon-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.text-box h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.text-box p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+}
+
+/* ---------------------------------------------------
+   Rodapé da Seção (Carrossel de Parceiros)
+   --------------------------------------------------- */
+.auto-partners {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 25px;
+    position: relative;
+    overflow: hidden; /* Impede que o carrossel crie barra de rolagem na página */
+}
+
+
+.partners-carousel-wrapper {
+    flex: 1;
+    overflow: hidden;
+    /* Máscara para criar o efeito de "sumir" nas pontas direita e esquerda (Fade in/out) */
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.partners-logos-track {
+    display: flex;
+    width: max-content;
+    /* A animação: nome, duração (ajuste para mais rápido ou devagar), ritmo constante e loop infinito */
+    animation: scrollLogos 25s linear infinite;
+}
+
+/* Pausa a animação quando o usuário passa o mouse por cima (opcional, mas recomendado) */
+.partners-logos-track:hover {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 40px; /* O padding deve ser igual ao gap para o loop ficar imperceptível */
+}
+
+.partner-logo {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+.partner-logo:hover {
+    color: #ffffff; /* Destaca a marca no hover */
+}
+
+/* Keyframes da Animação do Carrossel */
+@keyframes scrollLogos {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Move exatamente 50% do container (que equivale a uma lista completa) */
+        transform: translateX(-50%);
+    }
+}
+
+/* ==========================================================================
+   Seção: Seguros Fases da Vida
+   ========================================================================== */
+.seguros-fases-section {
+    background-color: rgb(1, 18, 71, 0.99); /* Azul escuro do fundo */
+    padding: 80px 5% 100px 5%;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif; /* Ajuste para a fonte do seu projeto */
+}
+
+.seguros-fases-section .container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* --- Cabeçalho --- */
+.section-header-center {
+    text-align: center;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pill-badge {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.highlight-purple {
+    color: #8b9dff; /* Tom mais claro/arroxeado da imagem */
+}
+
+.subtitle {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+/* --- Grid de Cards --- */
+.seguros-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.seguro-card {
+    background: rgba(255, 255, 255, 0.03); /* Branco com 3% de opacidade */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seguro-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08); 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Ícone especial do primeiro card (opcional/decorativo) */
+.card-top-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Wrapper para as imagens ficarem padronizadas */
+.card-image-wrapper {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-bg {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #23368f; /* Círculo de fundo do card */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.asset-img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* Adicione um filtro de sombra se a imagem for PNG sem fundo */
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3)); 
+}
+
+.seguro-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.seguro-card p {
+    font-size: 13px;
+    color: #ffff;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    flex-grow: 1; /* Empurra a seta para baixo */
+}
+
+/* Botão de seta */
+.card-arrow-btn {
+    width: 35px;
+    height: 35px;
+    background: #2a3d9b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.seguro-card:hover .card-arrow-btn {
+    background: #6a95ff;
+    transform: translateX(5px); /* Efeito suave de movimento na seta */
+}
+
+/* --- Barra Inferior (Stats) --- */
+/* --- Barra Inferior (Stats) com Efeito Glassmorphism --- */
+.stats-bottom-bar {
+    /* Removido o fundo sólido e adicionado fundo translúcido com blur */
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    
+    /* Borda sutil e sombra para profundidade */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.stat-icon {
+    font-size: 32px;
+    color: #8b9dff; /* Mesma cor do destaque no título */
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.stat-info strong {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.stat-info span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================================================
+   Seção: Depoimentos (Stack / Glassmorphism)
+   ========================================================================== */
+.depoimentos-section {
+    padding: 80px 5%;
+    overflow: hidden;
+    background: rgb(1, 18, 71, 0.99); /* Evita rolagem horizontal durante a animação */
+}
+
+.testimonial-stack-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 250px; /* Altura fixa para comportar as cartas empilhadas */
+    margin: 0 auto 40px auto;
+    perspective: 1000px; /* Dá um leve toque 3D */
+}
+
+.testimo-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    /* Efeito Vidro (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    
+    padding: 30px;
+    cursor: grab; /* Cursor de "pegar" */
+    
+    /* Transições suaves baseadas no código React fornecido */
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                opacity 0.4s ease, 
+                z-index 0.4s ease;
+    user-select: none;
+}
+
+.testimo-card:active {
+    cursor: grabbing; /* Altera quando está sendo arrastado */
+}
+
+.testimo-card.is-dragging {
+    transition: none; /* Remove a transição enquanto arrasta para seguir o mouse rápido */
+}
+
+/* --- Elementos Internos do Card --- */
+.testimo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.testimo-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.user-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.stars {
+    color: #fbbc04; /* Amarelo Google */
+    font-size: 12px;
+}
+
+.google-icon img {
+    width: 25px;
+}
+
+.quote {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    font-style: italic;
+}
+
+/* --- Paginação --- */
+.testimo-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.testimo-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.testimo-dot.active {
+    background: #8b9dff;
+    transform: scale(1.3);
+}
+
+/* ==========================================================================
+   Seção: Footer Moderno
+   ========================================================================== */
+.modern-footer {
+    background-color: rgb(1, 18, 71, 0.99); 
+    padding: 80px 5% 30px 5%;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.modern-footer .container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.5fr; /* Proporção das colunas */
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Coluna 1: Marca --- */
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 25px;
+}
+
+.footer-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.map-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* --- Coluna 2: Informações --- */
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #8b9dff;
+    border-radius: 2px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mb-custom {
+    margin-bottom: 35px;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+.contact-list i {
+    color: #8b9dff;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.contact-list a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #8b9dff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links a:hover {
+    background: #8b9dff;
+    color: #050a2e;
+    transform: translateY(-3px);
+}
+
+/* --- Coluna 3: Formulário Glassmorphism --- */
+.footer-form-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 60px 30px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Adicionado o .input-group select aqui */
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Remove a aparência padrão do navegador para o select e adiciona uma seta branca customizada */
+.input-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+    background-size: 12px auto;
+    cursor: pointer;
+}
+
+/* Estilo para simular o placeholder no select (quando a opção desativada está selecionada) */
+.input-group select:invalid {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Cor de fundo para as opções do menu (para não ficar transparente e ilegível ao abrir) */
+.input-group select option {
+    background-color: #2a3d9b; /* Usa a cor principal do seu botão para manter o padrão */
+    color: #ffffff;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Adicionado o :focus para o select também */
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #8b9dff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.btn-submit-glass {
+    width: 100%;
+    background: #2a3d9b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-submit-glass:hover {
+    background: #6a95ff;
+}
+
+/* --- Direitos Autorais (Bottom) --- */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #ffffff;
+}
+
+.divider {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+

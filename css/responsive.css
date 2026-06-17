@@ -1,0 +1,627 @@
+/* ==========================================================================
+   Responsivo geral
+   ========================================================================== */
+@media (max-width: 1440px) {
+    .header,
+    .hero,
+    .seguro-auto-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .container,
+    .hero-container {
+        max-width: 1180px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .section-title {
+        font-size: 50px;
+    }
+
+    .main-title {
+        font-size: 44px;
+    }
+
+    .hero-person-img {
+        max-width: 96%;
+    }
+
+    .auto-visual {
+        height: 460px;
+    }
+
+    .seguros-cards-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
+
+/* ==========================================================================
+   MacBook e notebooks grandes
+   ========================================================================== */
+@media (max-width: 1280px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .logo {
+        width: 120px;
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        width: 100%;
+        display: block;
+    }
+
+    .navbar {
+        gap: 22px;
+    }
+
+    .nav-link,
+    .btn-outline-nav {
+        font-size: 12px;
+    }
+
+    .hero,
+    .seguro-auto-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero {
+        min-height: calc(100vh - 78px);
+    }
+
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .hero-subtitle {
+        max-width: 600px;
+    }
+
+    .features-grid {
+        gap: 24px;
+    }
+
+    .hero-person-img {
+        max-width: 92%;
+    }
+
+    .wing-bg {
+        width: 460px;
+        left: 12%;
+    }
+
+    .section-title {
+        font-size: 46px;
+    }
+
+    .auto-content {
+        max-width: 52%;
+    }
+
+    .auto-visual {
+        height: 420px;
+    }
+
+    .badge-top-left {
+        left: 8%;
+    }
+
+    .badge-top-right {
+        right: 0;
+    }
+
+    .auto-features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .seguros-cards-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 0.9fr 1.2fr;
+        gap: 36px;
+    }
+}
+
+/* ==========================================================================
+   Notebook
+   ========================================================================== */
+@media (max-width: 1100px) {
+    .navbar,
+    .btn-outline-nav {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 135px;
+    }
+
+    .hero-container {
+        gap: 24px;
+    }
+
+    .hero-title {
+        font-size: 46px;
+    }
+
+    .cta-group {
+        gap: 18px;
+    }
+
+    .btn-primary {
+        padding: 15px 26px;
+        font-size: 13px;
+    }
+
+    .section-title {
+        font-size: 42px;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
+    .seguro-card {
+        padding: 34px 18px 28px;
+    }
+
+    .stats-bottom-bar {
+        padding: 26px 30px;
+    }
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+@media (max-width: 992px) {
+    .hero {
+        min-height: auto;
+        padding-top: 56px;
+        padding-bottom: 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding-bottom: 24px;
+    }
+
+    .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .features-grid,
+    .cta-group,
+    .partners-logos {
+        justify-content: center;
+    }
+
+    .hero-image-container {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-person-img {
+        max-width: 58%;
+        transform: translateY(18px);
+    }
+
+    .wing-bg {
+        width: 420px;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+
+    .seguro-auto-section {
+        padding-top: 70px;
+    }
+
+    .seguro-auto-section::before {
+        width: 100%;
+        background: linear-gradient(to right, rgba(13, 41, 122, 0.92) 0%, rgba(4, 9, 36, 0.2) 100%);
+    }
+
+    .auto-hero {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    .auto-content {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .benefits-list li,
+    .cta-group-auto {
+        justify-content: center;
+    }
+
+    .auto-visual {
+        display: none;
+    }
+
+    .auto-features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .seguros-fases-section,
+    .depoimentos-section,
+    .modern-footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .section-header-center {
+        margin-bottom: 42px;
+    }
+
+    .seguros-cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .stats-bottom-bar {
+        flex-direction: column;
+        gap: 26px;
+        padding: 34px 24px;
+    }
+
+    .stat-item {
+        width: 100%;
+    }
+
+    .stat-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .testimonial-stack-container {
+        max-width: 560px;
+        height: 280px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 34px;
+    }
+
+    .footer-col:last-child {
+        grid-column: span 2;
+    }
+}
+
+/* ==========================================================================
+   Celular
+   ========================================================================== */
+@media (max-width: 767px) {
+    .header {
+        padding: 18px 6%;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .hero,
+    .seguro-auto-section,
+    .seguros-fases-section,
+    .depoimentos-section,
+    .modern-footer {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .hero {
+        padding-top: 42px;
+    }
+
+    .badge,
+    .pill-badge {
+        font-size: 10px;
+        line-height: 1.4;
+        white-space: normal;
+    }
+
+    .hero-title,
+    .section-title,
+    .main-title {
+        line-height: 1.16;
+    }
+
+    .hero-title {
+        font-size: 34px;
+        margin-bottom: 18px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .hero-title br,
+    .section-title br,
+    .main-title br,
+    .subtitle br,
+    .section-desc br,
+    .hero-subtitle br {
+        display: none;
+    }
+
+    .hero-subtitle,
+    .section-desc,
+    .subtitle {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature-item {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .cta-group,
+    .cta-group-auto {
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        margin-bottom: 42px;
+    }
+
+    .btn-primary,
+    .btn-text,
+    .btn-large {
+        width: 100%;
+        max-width: 330px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-primary,
+    .btn-large {
+        padding: 15px 18px;
+        font-size: 12px;
+    }
+
+    .partners-section {
+        padding-top: 18px;
+    }
+
+    .partners-logos {
+        flex-wrap: wrap;
+        gap: 14px 22px;
+        justify-content: center;
+    }
+
+    .partner-logo {
+        font-size: 12px;
+    }
+
+    .hero-person-img {
+        max-width: 86%;
+    }
+
+    .wing-bg {
+        display: none;
+    }
+
+    .seguro-auto-section {
+        padding-top: 56px;
+        padding-bottom: 48px;
+        background-position: center;
+    }
+
+    .auto-hero {
+        margin-bottom: 40px;
+    }
+
+    .benefits-list {
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .benefits-list li {
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 13px;
+    }
+
+    .auto-features-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .auto-feature-card {
+        padding: 20px;
+    }
+
+    .auto-partners {
+        align-items: stretch;
+    }
+
+    .logos-slide {
+        gap: 24px;
+        padding-right: 24px;
+    }
+
+    .seguros-fases-section {
+        padding-top: 58px;
+        padding-bottom: 64px;
+    }
+
+    .seguros-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 36px;
+    }
+
+    .seguro-card {
+        max-width: 360px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 34px 22px 28px;
+    }
+
+    .card-image-wrapper {
+        width: 128px;
+        height: 128px;
+        margin-bottom: 22px;
+    }
+
+    .circle-bg {
+        width: 110px;
+        height: 110px;
+    }
+
+    .stats-bottom-bar {
+        padding: 28px 18px;
+        gap: 22px;
+    }
+
+    .stat-item {
+        justify-content: flex-start;
+    }
+
+    .stat-icon {
+        font-size: 28px;
+    }
+
+    .stat-info strong {
+        font-size: 15px;
+    }
+
+    .stat-info span {
+        font-size: 13px;
+    }
+
+    .depoimentos-section {
+        padding-top: 58px;
+        padding-bottom: 64px;
+    }
+
+    .testimonial-stack-container {
+        height: 330px;
+        max-width: 100%;
+    }
+
+    .testimo-card {
+        padding: 22px;
+    }
+
+    .testimo-header {
+        gap: 16px;
+    }
+
+    .quote {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .modern-footer {
+        padding-top: 58px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        margin-bottom: 44px;
+    }
+
+    .footer-col:last-child {
+        grid-column: span 1;
+    }
+
+    .footer-logo {
+        max-width: 130px;
+    }
+
+    .footer-form-glass {
+        padding: 28px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ==========================================================================
+   Celulares pequenos
+   ========================================================================== */
+@media (max-width: 420px) {
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .section-title,
+    .main-title {
+        font-size: 28px;
+    }
+
+    .badge,
+    .pill-badge {
+        padding: 7px 14px;
+    }
+
+    .feature-icon,
+    .icon-box {
+        width: 38px;
+        height: 38px;
+    }
+
+    .testimonial-stack-container {
+        height: 360px;
+    }
+
+    .testimo-user {
+        gap: 10px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-form-glass {
+        padding: 24px 16px;
+    }
+}
